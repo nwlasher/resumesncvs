@@ -1,0 +1,206 @@
+%==============================================================
+% HYBRID CS / ENGINEERING RESUME TEMPLATE
+% Best for: CS / CompE internship applications (e.g. MOOG)
+% Style: Clean header like CS resume + project-detail structure
+%        of the Engineering resume, with a technical skills block
+%==============================================================
+
+\documentclass[10pt, letterpaper]{article}
+
+% ---- Packages -----------------------------------------------
+\usepackage[
+  top=0.5in, bottom=0.5in,
+  left=0.6in, right=0.6in
+]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{fontawesome5}   % icons (optional – remove if not installed)
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ---- Hyperlink style ----------------------------------------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black
+}
+
+% ---- No page numbers ----------------------------------------
+\pagestyle{empty}
+
+% ---- Section title formatting (rule under each section) -----
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}
+  [\titlerule]
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+\titleformat{\subsection}[runin]
+  {\normalsize\bfseries}
+  {}{0em}{}
+\titlespacing{\subsection}{0pt}{4pt}{4pt}
+
+% ---- List settings (tight bullets) -------------------------
+\setlist[itemize]{
+  noitemsep,
+  topsep=2pt,
+  parsep=0pt,
+  leftmargin=1.2em,
+  label=\textbullet
+}
+
+% ---- Helper commands ----------------------------------------
+
+% Experience / project entry
+% Usage: \entry{Title / Role}{Company / Context}{Location}{Dates}
+\newcommand{\entry}[4]{%
+  \noindent
+  \textbf{#1}\hfill\textit{#3, #4}\\
+  \textit{#2}
+  \vspace{2pt}
+}
+
+% Skills row in the skills table
+% Usage: \skill{Category}{Item, Item, Item}
+\newcommand{\skill}[2]{%
+  \textbf{#1:} & #2 \\[1pt]
+}
+
+%==============================================================
+\begin{document}
+
+% ========================= HEADER ============================
+\begin{center}
+	{\LARGE\bfseries Nathaniel Lasher}\\[4pt]
+	\small
+	845-264-4743 \quad|\quad
+	\href{mailto:you@buffalo.edu}{nwlasher@buffalo.edu} \quad|\quad
+	\href{https://linkedin.com/in/nathaniel-lasher-613a6a368/}{https://www.linkedin.com/in/nathaniel-lasher-613a6a368/} \quad|\quad
+	\href{https://github.com/yourusername}{github.com/nwlasher}
+\end{center}
+
+% ========================= EDUCATION =========================
+\section{Education}
+
+\entry
+{Bachelor of Science, Computer Engineering}
+{University at Buffalo, The State University of New York}
+{Buffalo, NY}
+{Expected May 2026}
+\begin{itemize}
+	\item GPA: 3.85 / 4.0 \quad|\quad Dean's List Fall 2022 - Spring 2026
+	\item Relevant Coursework: Embedded Systems Protocols, Digital Logic, FPGA systems, Data Structures \& Algorithms,
+	      Operating Systems, Computer Architecture, Hardware-Software Integrations
+\end{itemize}
+
+\entry
+{Masters of Engineering, Electrical Enginnering}
+{University at Buffalo, The State University of New York}
+{Buffalo, NY}
+{Expected May 2028}
+
+\vspace{4pt}
+
+% ========================= SKILLS ===========================
+\section{Technical Skills}
+
+\begin{tabular}{@{} l @{\hspace{6pt}} p{0.82\textwidth} @{}}
+	\skill{Languages}{C, C++, Python, Go, Java, ARM asm, VHDL \& Verilog}
+	\skill{Hardware / EE Tools}{Voltage Supplies \& Multimeters, Oscilloscopes, Soldering, PCB layout \& Schematics (Basic KiCad), FPGAs (Xilinx Vivado)}
+	\skill{Software / Dev Tools}{Git, Linux, VS Code, Eclipse (CCS), eMacs \& nVim}
+	\skill{Engineering Tools}{FreeCAD (Basic), LTSpice}
+\end{tabular}
+
+\vspace{2pt}
+
+% ====================== WORK EXPERIENCE ======================
+\section{Work Experience}
+
+\entry
+{Field Technician Intern}
+{EverOn (Formerly ADT Commercial)}
+{Hawthorne, NY}
+{Apr 2025 -- Aug 2025}
+\begin{itemize}
+	\item \textbf{Project:} Prep and installation of public safety and conveniece systems
+	\item Wrote scripts to streamline the programming and imaging of over 1000 Tamper-proof security cameras, freeing time for assembly, delivery, and install
+	\item Programmed Access control, Fire Alert, and public address systems using SQL databases.
+	\item Collaborated with senior technicians and engineers to reprogram install Long-Range RFID readers for door controls in an NYC bus garage.
+\end{itemize}
+
+\entry
+{Teaching Asistant}
+{University at Buffalo, The State University of New York}
+{Buffalo, NY}
+{Fall 2025 - Ongoing}
+
+\vspace{4pt}
+
+% ========================= PROJECTS ==========================
+\section{Engineering Projects}
+
+% --- Project 1 (most impressive / most relevant to MOOG) ---
+\entry
+{Projectile Motion Platform and Instrumented Projectile}
+{Senior Design / Course Project, UB}
+{}
+{Spring 2026}
+\begin{itemize}
+	\item Modeled many components using CAD tools which are able to withstand 200+ lbs and constant impact (3D-Printed).
+	\item Considered safety-critical requirements in designing the project, maintaining a $>3n$ safety factor on pressurized components of the design.
+	\item Collaborated with a team of 2 others to create a custom PCB for CAN motor and system control via Arduino Giga R1
+	\item Designed and implemented firmware for a rugged embedded system capable of recording data in-flight and reporting it back to the main cannon.
+	\item Documented Usage \& design in a formal engineering report following provided style guidelines.
+\end{itemize}
+
+\vspace{4pt}
+
+% --- Project 2 ---
+\entry
+{Embedded ARM - Tiva C-Series Launchpad (TM4C)}
+{Personal / Course Project, UB}
+{}
+{Fall 2025}
+\begin{itemize}
+	\item Developed bare-metal stepper motor control in C/ARM-asm for TM4C123GX to implement Timer-Driven unipolar stepper motor speed, position control, and G-Code parsing.
+\end{itemize}
+
+\vspace{4pt}
+
+% --- Project 3 ---
+\entry
+{FPGA-Based Projects}
+{Intro. FPGAs and VHDL \& Computer Architecture}
+{}
+{Fall 2025, Spring 2026}
+\begin{itemize}
+	\item Implemented a basic interactive 2D renderer using lin. algebra based VGA output on a Xilinx ZYBO Z7.
+	\item Designed with a group of 2 others a basic 16-bit CPU Datapath capable of running a program to compute the fibonnaci sequence on the Xilinx Basys 3.
+\end{itemize}
+
+\vspace{4pt}
+
+% ================== LEADERSHIP / ACTIVITIES ==================
+\section{Leadership \& Activities}
+
+\noindent\textbf{Volunteer}, UB/SEAS outreach to k-12 and prospective students
+\hfill Fall 2025 - Ongoing
+
+\end{document}
+
+%==============================================================
+% QUICK TIPS FOR MOOG APPLICATION
+% -------------------------------------------------
+% MOOG makes precision motion control systems (aerospace,
+% defense, medical). Emphasize:
+%   • Servo / motor control, actuation, closed-loop systems
+%   • Embedded C/C++, MATLAB/Simulink, real-time systems
+%   • Attention to precision and tolerance requirements
+%   • Any experience with aerospace, defense, or medical devices
+%
+% Compile with: pdflatex resume_template_moog.tex
+% (run twice if hyperlinks behave oddly)
+%==============================================================
