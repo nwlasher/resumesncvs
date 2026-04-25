@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.9)  25 APR 2026 01:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.9)  25 APR 2026 02:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,14 +335,14 @@ LaTeX Font Info:    ... okay on input line 73.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(43.36243pt, 527.57014pt, 43.36243pt)
-* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* v-part:(T,H,B)=(28.90755pt, 729.92744pt, 36.135pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=527.57014pt
-* \textheight=722.7pt
+* \textheight=729.92744pt
 * \oddsidemargin=-28.90756pt
 * \evensidemargin=-28.90756pt
-* \topmargin=-73.135pt
+* \topmargin=-80.36244pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -414,7 +414,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 110.
 
-Overfull \hbox (37.48677pt too wide) in paragraph at lines 110--116
+Overfull \hbox (0.553pt too wide) in paragraph at lines 110--116
 [][] 
  []
 
@@ -431,13 +431,13 @@ Package rerunfilecheck Info: File `resume_template_moog.out' has not changed.
 Here is how much of TeX's memory you used:
  12864 strings out of 476106
  219957 string characters out of 5793934
- 1943975 words of memory out of 5000000
+ 1944975 words of memory out of 5000000
  34735 multiletter control sequences out of 15000+600000
  595462 words of font info for 56 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  75i,8n,79p,316b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb>
-Output written on resume_template_moog.pdf (1 page, 155199 bytes).
+Output written on resume_template_moog.pdf (1 page, 155157 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
